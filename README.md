@@ -1,2 +1,3 @@
 # Book_Shopping_Site
 A learning web site project! 
+This project continues to be developed...
