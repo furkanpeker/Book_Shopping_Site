@@ -1,2 +1,2 @@
 # Book_Shopping_Site
-A web site project
+A learning web site project! 
