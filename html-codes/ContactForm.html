@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<title>İletişim Formu</title>
+		<style>
+			
+			body {
+				position:relative;
+				width:100%;
+				height:100%;
+			}
+			
+			form {
+			 	position:relative;
+				width:100%;
+				height:100%;
+				margin:0;
+			}
+			header { 
+				background-color:gray; 
+				text-align:center; 
+				border-radius:8px;
+				height:25px;
+				padding-top:5px;
+				color:white;
+				font-family:sans-serif;
+			}
+				
+			#form {
+				position:relative;
+				width:80%;
+				height:100%;
+				margin-left:10%;
+				margin-top:10%;
+			}
+			
+			#warning {
+				padding-left:10px;
+				margin-top:20px;
+			}
+			
+			#col1 {
+			    position:relative;
+			    width:40%;
+			    height:100%;
+			    float:left;
+			    clear:right;
+			    margin-top:1.1%;
+			    padding-top:0;
+			}
+
+			article { 
+				width:45%;
+				margin-left:40px;
+			}
+			aside { 
+				width:55%;
+				position:realtive;
+				display:block;
+				margin-left: -10px;
+				margin-right: -10px;
+				clear:both;
+				margin: 0;
+				margin-right: 0px;
+				margin-left: 0px;
+				padding: 0;
+				border: 0;
+			}
+			.boxes {
+				width:100%;
+				padding-top:10px;
+				padding-bottom:10px;
+				float:left;
+				padding-left:10px;
+				padding-right:10px;
+				box-sizing:border-box;
+				margin:0;
+				border:0;
+				font:inherit;
+			}
+			.row {
+				line-height:40px;
+				font-size:15px;
+				position:relative;
+				cursor:pointer;
+				margin-left:-10px;
+				margin-right:-10px;
+				clear:both;
+				display:block;
+				margin:0;
+				padding:0;
+				border:0;
+				font:inherit;
+			}
+			input[type=text] { 
+				height:45px; 
+				width:300px;
+				padding-left:50px;
+				box-sizing:border-box;
+				float:left;
+			}
+			input[type=text]:hover {
+				background-color:white;
+			}
+			img {
+				width:40px;
+				height:40px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #ccc;
+				background-repeat: no-repeat;
+				margin: 2;
+				padding: 0;
+				border: 0;
+				font:inherit;
+				cursor:pointer;
+			}
+			#message-box {
+				width:80%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left:10px;
+				float:left;
+				margin:0;
+				border:0;
+				font:inherit;
+			}
+			#row {
+				line-height:40px;
+				font-size:15px;
+				position:relative;
+				cursor:pointer;
+				margin-left:-10px;
+				margin-right:-10px;
+				display:block;
+				margin:0;
+				padding:0;
+				border:0;
+				font:inherit;	
+			}
+			textarea { 
+				padding-left:52px;
+				height:150px;
+				line-height:20px;
+				padding-top:9px;
+				padding-bottom:9px;
+				padding-right:10%;
+				margin: 0;			
+				width:100%;
+			}
+			textarea:hover {
+				background-color:white;
+			}
+			#message-logo {
+				width:25px;
+				height:25px;
+				position:absolute;
+				top:0;
+				left:0;
+				background-repeat:no-repeat;
+				margin-left:8px;
+				margin-top:8px;
+				padding: 0;
+				border:0;
+				font:inherit;
+				cursor:pointer;
+			}
+			
+			#buttonSubmit {
+				background-color:tomato;
+				height:7%;
+				width:50%;
+				margin-top:8%;
+				margin-left:25%;
+				color:white;
+				border-radius:8px;
+			}
+
+			#buttonSubmit:hover {
+				background-color:brown;
+				cursor:pointer;
+			}
+			
+			#col2 {
+			    position:relative;
+			    width:50%;
+			    height:100%;
+			    float:left;
+			}
+			
+			#info {
+				margin-top:0;
+				margin-bottom:12%;
+				margin-left:15%;
+				font-size:15px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div id="form">
+			<header><b>İletişim Formu</b></header>
+			<br>
+			<form>			
+				<p id="warning">Lütfen iletişim bilgilerinizin doğru olmasına özen gösteriniz.</p>
+				<br><br>
+				
+				<!-- the left column-->
+				
+				<div id="col1">
+					<div class="boxes">
+						<div class="row">
+							<img src="./images/person-icon.png" width="45px" align="center">
+							<input type="text" name="name" color="red" placeholder="Adınız" autofocus="on" required autofocus>
+						</div>
+					</div>
+					<br><br>
+					
+					<div class="boxes">
+						<div class="row">
+							<img src="./images/family-icon.png" width="45px" align="center">
+							<input type="text" name="surname" placeholder="Soyadınız" required>
+						</div>
+					</div>
+					<br><br>
+					
+					<div class="boxes">
+						<div class="row">
+							<img src="./images/e-mail.png" width="45px" align="center">
+							<input type="text" name="e-mail" placeholder="E-psosta adresiniz" required>
+						</div>
+					</div>
+					<div id="message-box">
+						<div id="row">
+							<img id="message-logo" src="./images/message.png" width="45px" align="center">
+							<textarea rows="5" cols="70" placeholder="Mesajınız"></textarea>
+						</div>
+						<input id="buttonSubmit" type="button" value="Gönder">	
+					</div>
+				</div>
+				
+				<!-- the right column-->
+				
+				<div id="col2">
+					<h>
+					<pre id="info"><b>
+Firma Adı              : Adrenalin Kitap&Teknoloji Basım Yayım
+Adres                  : Avcılar / İstanbul / Türkiye
+Telefon		       : 906468468544
+Firma Adresi           : Üniversite Mah.
+E-posta                : bilgi@aktkitap.com
+Vergi Dairesi          : Bozkurtlu
+Facebook Sayfası       : https://www.facebook.com/AktYayinlari/
+Twitter Sayfası        : https://twitter.com/aktyayinlari
+İnstagram Sayfası      : https://www.instagram.com/aktKitap.com/
+Whatsapp Satış Numarası: 08503046546
+					</b></pre>
+				</div>
+				
+			</form>
+		</div>
+			
+		
+	</body>
+	
+</html> 
